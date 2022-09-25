@@ -1,5 +1,9 @@
 <div class="main-content">
-  <div class="cont">
+    <img src="assets/bg1.jpg" style="width: 100%; max-height: 100%; position: absolute; " />
+    <img src="assets/bg2.png" style="width: 100%; max-height: 100%; position: absolute;" />
+
+  <div class="cont" style="position: relative;">
+
     <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark" style="margin-bottom: 5vh;">
       <div class="container px-4">
         <a class="navbar-brand" routerLinkActive="active" [routerLink]="['/home']">
@@ -64,6 +68,7 @@
       </div>
     </nav>
     <router-outlet></router-outlet>
-    <app-footer></app-footer>
   </div>
+  <app-footer></app-footer>
+
 </div>
