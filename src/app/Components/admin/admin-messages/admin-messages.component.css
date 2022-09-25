@@ -1,0 +1,272 @@
+.col-lg-3 {
+border-radius: 18px;
+padding: 10px;
+background-color: #1E1F25;
+color: #525f7f;
+width: 25%;
+height: 700px;
+border: 0;
+position: relative;
+display: flex;
+overflow: hidden;
+padding-left: 17px;
+
+}
+.col-lg-5
+ { border-radius: 18px;
+   margin-left: 20px;
+   margin-right: 20px;
+   position: relative;
+   padding: 0px 0px 10px 22px;
+
+
+
+ }
+
+
+select
+{ background: transparent;
+  border: 1px solid #3C4254;
+  border-radius: 10px;
+  color: #757B8C;
+  position: absolute;
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 40px;
+
+}
+.slt:hover {
+  background-color: transparent;
+}
+
+.opt{
+  position: absolute;
+  background-color: #27293d;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.refresh {
+  position: absolute;
+  display: flex;
+  height: 40px;
+  width: 40px ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #3C4254;
+  border-radius: 10px;
+  right : 110px }
+
+.plus {
+  position: absolute ;
+  display: flex;
+  height: 40px;
+  width: 40px ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: #27293d;
+  border: 1px solid #3C4254;
+  border-radius: 10px;
+  top: 0px;
+  right: 58px;
+  color: #27293d  ;
+  cursor: pointer;
+
+
+  background: #18E68E;
+}
+
+.frstrow {
+  display: inline-block;
+  width: 280px;
+  height: 50px;
+  position: relative;
+  margin-top: 6px;
+}
+
+.card-user
+{
+  position: absolute;
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+width: 241px;
+height: 102px;
+
+background: #282C38;
+border-radius: 10px;
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.smallavatar .img-circle {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  text-align: left;
+
+}
+
+
+#usermsg {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+top :80px ;
+position: absolute;
+box-sizing: border-box;
+}
+
+.limsg {
+  background-color: transparent;
+  padding: 10px;
+  width: 215px;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+.active , .limsg:hover  {
+  background-color: #282C38;
+}
+
+
+#username {
+width: 83px;
+height: 15px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 15px;
+color: #18E68E;
+}
+
+#chatusermsg {
+  width: 110px;
+   }
+
+#chatuserobj {
+  width: 110px;
+  color: #E1E0E3;
+
+}
+
+.btnn {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  width: 62px;
+  height: 20px;
+  background: #282C38;
+  color: #757B8C;
+  font-size: 12px;
+  border: 0.5px solid #3C4254;
+  border-radius: 5px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 25px;
+  cursor: pointer;
+
+  }
+.images {
+  width: 100px;
+  height:100px ;
+  border-radius: 10px;
+  position: relative;
+  margin-right:15px ;
+  margin-top: 15px;
+
+}
+.file
+{ width: 207px;
+  height: 60px;
+  background-color: #282C38;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  padding-top: 14px;
+  padding-left: 8px;
+  display: inline-flex;
+}
+
+.fullmail {
+width: 400px;
+padding-top: 14px;
+padding-left: 8px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+color: #B5B5BE;
+}
+
+.sendbutton {
+  position: relative ;
+  display: flex;
+  height: 40px;
+  width: 120px ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background: #27293d;
+  border: 1px solid #3C4254;
+  border-radius: 10px;
+  color: #27293d  ;
+  background: #18E68E;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: inline-block;
+
+
+
+}
+
+#messagearea {
+  resize: none;
+    vertical-align: top;
+    background-color: transparent;
+    width: 100%;
+    color: #B5B5BE;
+    height: max-content;
+    min-height: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    }
+
+.message-icons {
+    color: #757B8C;
+    padding-top: 12px;
+    height: max-content;
+    width: max-content;
+    float: right;
+    cursor: pointer;
+
+
+  }

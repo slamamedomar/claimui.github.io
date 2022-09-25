@@ -1,0 +1,20 @@
+.form-control{
+border-color: #18E68E;
+margin-top: 3vh;
+background: transparent;
+color: #ADA8B8;
+border-radius: 0.5rem;
+font-size: .7500000025rem;
+transition: border-color .3s ease-in-out,border-color .3s ease-in-out,border-color .3s ease-in-out;
+}
+.btn {
+  background: #18E68E;
+  border-radius: 0.5rem;
+  color: #484451;
+  margin-top: 3vh;
+  border-color: #18E68E;
+  width: 360px;
+  transition: border-color .3s ease-in-out,border-color .3s ease-in-out,border-color .3s ease-in-out;
+
+
+}

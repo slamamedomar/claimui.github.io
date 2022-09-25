@@ -1,0 +1,177 @@
+#toolbarMenu {
+  cursor: pointer;
+}
+#dashpage {
+  left: 0px;
+  top: 92px;
+  right: 0px;
+  position: absolute;
+  background: transparent;
+  border-radius: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: max-content;
+
+
+}
+
+
+#sidenavContainer {
+  left:60px;
+  top: 26px;
+  right: 26px;
+  bottom: 23px;
+  position: absolute;
+  background: #141518;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+
+#sidenav {
+  padding-top: 12px;
+  left: 26px;
+  top: 26px;
+  width: 249px;
+  height: 817px;
+  background: #1E1F25;
+  border-radius: 20px;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+
+#sidenav.menu-close {
+  width: 70px;
+
+
+}
+
+
+#sidenav.menu-open {
+  width: 240px;
+
+
+
+
+}
+
+
+/* #sidenav .mat-list-item-content {
+  padding: 0 0 0 0;
+} */
+
+#sidenav .menu-item {
+
+  left: -16px ;
+  top: -10px;
+  height: 40px;
+  border-radius: 0;
+  text-align: left;
+  padding: 0 0 0 0 ;
+  background:transparent   ;
+  position: absolute;
+  padding-left: 10px;
+
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #757B8C;
+
+
+}
+
+#sidenav .menu-item:hover {
+  background: #282C38;
+  color: #18E68E;
+  width: 104%;
+  padding-left: 5%;
+  padding-right: 59px;
+  border-right: 16px solid #282C38;
+  margin-left: 6px;
+  }
+  #sidenav .active {
+    color: #18E68E;
+    width: 106%;
+    }
+#textt {
+  position: absolute;
+width: 75px;
+height: 17px;
+left: 26px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #3C4254;
+
+}
+
+
+
+
+#sidenav .menu-item mat-icon {
+  margin-left: 28px;
+  width: 30px;
+
+}
+
+
+
+
+
+#sidenav .cardavatar {
+  position: relative;
+  height: 72px;
+  left: 0px;
+  bottom: -51px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #282C38;
+  background-size: cover;
+
+}
+#sidenav .avatar {
+
+  background-image: url(src/assets/profil.png);
+  background-size: cover;
+  border: 1px solid #FFFFFF;
+
+}
+#sidenav .cardavatar .cardtitle {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+}
+#sidenav .cardavatar .cardmail {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #757B8C ;
+
+display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+#sidenav .moreico {
+ margin-top: 10px;
+ color : #757B8C
+}
+
+.menuu
+{
+  background-color: #757B8C;
+}
+

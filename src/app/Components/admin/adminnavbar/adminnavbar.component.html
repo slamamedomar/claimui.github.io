@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-dark ">
+  <a class="navbar-brand">Claim</a>
+
+  <span class='bar'>&#x2503;</span>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" >Admin Dashboard  </a>
+
+      </li>
+
+    </ul>
+
+ </div>
+
+
+               <div class="rightelements"   >
+                <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto" style="padding-right: 20px ;  ">
+                  <div class="form-group mb-0" >
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend"  >
+                          <div class="mat">
+                          <i class="bi bi-search" style="color: #757B8C; padding-left: 12px; padding-right: 6px; "></i>
+                          <input class="sear" type="text">
+                        </div>
+
+                      </div>
+                      </div>
+                  </div>
+                </form>
+
+
+
+                <span class='bar'>&#x2503;</span>
+
+                <div class="notification">
+                   <a class="btn-floating btn-blue btn-lg btn-default" [matMenuTriggerFor]="notification" >
+                      <em class="bi bi-bell" style="color: #fff; font-size:17px; padding-left: 20px; left: 302px; top: 8px; border-radius: 0px; padding-right: 0;"></em>
+                    </a>
+                   <span class="badge" *ngIf="count > 0">{{count}}</span>
+                   <mat-menu class="notifications" #notification="matMenu" yPosition="below" xPosition="after">
+                    <button mat-menu-item>
+                      <mat-icon>dialpad</mat-icon>
+                      <span>Redial</span>
+                    </button>
+                    <button mat-menu-item disabled>
+                      <mat-icon>voicemail</mat-icon>
+                      <span>Check voice mail</span>
+                    </button>
+                    <button mat-menu-item>
+                      <mat-icon>notifications_off</mat-icon>
+                      <span>Disable alerts</span>
+                    </button>
+                  </mat-menu>
+                </div>
+
+                <span class='bar'>&#x2503;</span>
+
+                <img src="assets/premium.png" style="width:  7rem; margin-left: 10px; " />
+
+              </div>
+
+
+
+
+</nav>
+

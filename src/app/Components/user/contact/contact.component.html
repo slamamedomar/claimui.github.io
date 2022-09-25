@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-md-6">
+
+    <div>
+      <h1 style="color: #18E68E;
+                  text-align: center;
+                  margin-top: 10vh;
+                  font-family: 'Inter';
+                  font-weight: 800;
+                  font-size: 64Px;
+                  text-shadow: #18E68E 5px 0px 24px;
+                  line-height: 67px;">Grow up <br>
+        Your service
+      </h1>
+
+      <p style="color: #ADA8B8; text-align: center;   font-size: 18Px; margin-top: 5vh;">Download the application :</p>
+      <img src="assets/googleplay.png" style="width: 7rem; margin-left: 25vh; margin-top: 3vh; cursor: pointer;">
+      <img src="assets/appstore.png" style="width: 7rem; margin-left: 7vh; margin-top: 3vh; cursor: pointer;">
+
+
+    </div>
+
+
+  </div>
+  <div class="col-md-6">
+    <div style="position: relative; height: 50px; left: -10vh;">
+      <div>
+        <h1 style="
+      margin-left: 23vh ;
+      color: #18E68E;
+      font-family: 'Inter';
+      text-align: center;
+      font-weight: 700;
+      font-size: 25Px;
+        line-height: 67px;">Contact Us </h1>
+      </div>
+
+      <p style="color: #ADA8B8; text-align: center;   font-size: 15Px;margin-left: 25vh ; margin-bottom: 5vh;;">Need to
+        get in touch with us? Either fill out
+        the form <br> with your inquiry or find the department
+        email<br> you'd like to contact below.
+
+
+      </p>
+      <div class="dd">
+        <form [formGroup]="contactForm" (ngSubmit)="contact()">
+          <input class="form-control" formControlName="email" placeholder="Mail" type="text">
+          <input class="form-control" formControlName="fullName" style="margin-top: 2vh;" placeholder="FullName"
+            type="text">
+          <textarea class="form-control" matInput formControlName="textArea" required
+            style="margin-top: 2vh; height: 100px;" placeholder="Your message"></textarea>
+        </form>
+        <button class="btn btn-fill btn-primary" type="submit">Send</button>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</div>

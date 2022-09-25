@@ -1,0 +1,41 @@
+<img src="assets/phone1.png" style="width: 30%; margin-left: 20vh;" />
+<div style="position: absolute; height: 50px; left: auto; right: 25vh; top: 12vh ;">
+  <div>
+             <h1 style="color: #18E68E;
+                         text-align: center;
+                         font-family: 'Inter';
+                         font-weight: 800;
+                         font-size: 44Px;
+                         text-shadow: #18E68E 5px 0px 24px;
+                         line-height: 67px;">Grow up <br>
+                            Your service
+              </h1>
+  </div>
+
+
+<div>
+  <h4 style="margin-top: 5vh; color: #18E68E;">Account Login</h4>
+  <p class="pp" style="color: #ADA8B8; display:inline;">If you are already a member you can login <br> If you want to  </p>
+  <a class="link" routerLink="/register" style="  position: relative;  color: #18E68E; text-align: center; font-size: smaller;  ">Register</a>
+
+      <div style="margin-top: 2vh;">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <input id="flog" class="form-control" formControlName="email" placeholder="Mail" type="text">
+        <input id="flog" class="form-control" formControlName="password" style="margin-top: 2vh;" placeholder="Password" type="password">
+        </form>
+         <!-- <p style="margin-top: 1vh; color: #75072f;">verify your informations please ! </p> -->
+         <p></p>
+
+         <div>
+                <button class="btn btn-fill btn-primary" routerLink="/admin/dashboard" type="submit">Login</button>
+              </div>
+
+                <div class="ss" style="text-align: center; margin-top: 2vh ;">
+                  <p style="color: #fff; text-align: left; font-size: smaller;  margin-left: 6vh ; display:inline; ">Forgot your password ?</p>
+                  <a routerLink="/forgot-password" style=" margin-left: 3%;  position: relative    ;  color: #18E68E; text-align: center; font-size: smaller;">Reset your password</a>
+                  </div>
+
+      </div>
+  </div>
+</div>
+

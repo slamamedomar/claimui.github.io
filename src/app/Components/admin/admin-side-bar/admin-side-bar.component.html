@@ -1,0 +1,134 @@
+
+
+<mat-sidenav mode="side" #sidenav id= "sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened >
+
+<mat-list id="menus" >
+  <mat-list-item >
+    <button class="menu-item"  (click)="onToolbarMenuToggle()" mat-flat-button>
+        <a id="toolbarMenu" class="navbar-brand" >
+      <img  *ngIf="isMenuOpen" src="assets/logoclaim.png" style="width: 85px; margin-left: 28px;" />
+      <img  *ngIf="!isMenuOpen" src="assets/logo.png" style="  width: 22px; margin-left: 32px; " />
+    </a>
+    </button>
+</mat-list-item>
+
+  <mat-list-item >
+    <button class="menu-item" (click)="pageTitle('Dashboard')" [routerLink]="['/admin/dashboard']"  mat-flat-button>
+      <mat-icon routerLinkActive="active" >menu</mat-icon>
+      <span *ngIf="isMenuOpen"  style="padding-left: 10px;">Dashboard</span>
+      </button>
+  </mat-list-item>
+  <mat-list-item >
+    <button class="menu-item"  (click)="pageTitle('Profile')" [routerLink]="['/admin/profile']"  mat-flat-button>
+    <mat-icon routerLinkActive="active">person</mat-icon>
+      <span *ngIf="isMenuOpen" style="padding-left: 10px;">Profile</span>
+      </button>
+  </mat-list-item>
+  <mat-list-item >
+    <button class="menu-item"  (click)="pageTitle('Messages')" [routerLink]="['/admin/messages']" mat-flat-button>
+      <mat-icon routerLinkActive="active" >email</mat-icon>
+      <span *ngIf="isMenuOpen"  style="padding-left: 10px;">Messages</span>
+      </button>
+  </mat-list-item>
+  <mat-list-item >
+    <button class="menu-item"  (click)="pageTitle('Verification')" [routerLink]="['/admin/verification']" mat-flat-button>
+      <mat-icon routerLinkActive="active" > verified_user  </mat-icon>
+      <span *ngIf="isMenuOpen"  style="padding-left: 10px;">Verification</span>
+      </button>
+  </mat-list-item>
+  <mat-list-item >
+    <button class="menu-item"  (click)="pageTitle('Payment')" [routerLink]="['/admin/payment']" mat-flat-button>
+      <mat-icon routerLinkActive="active" > payment</mat-icon>
+      <span *ngIf="isMenuOpen"  style="padding-left: 10px;">Payment</span>
+      </button>
+  </mat-list-item>
+  <mat-list-item >
+
+  <div id="textt" class="h5" *ngIf="isMenuOpen">Interactions</div>
+</mat-list-item>
+
+  <mat-list-item >
+    <button class="menu-item"  (click)="pageTitle('Réservation')" [routerLink]="['/admin/reservation']"  mat-flat-button>
+      <mat-icon routerLinkActive="active" > date_range</mat-icon>
+      <span *ngIf="isMenuOpen" style="padding-left: 10px;">Reservation</span>
+      </button>
+  </mat-list-item>
+  <mat-list-item   >
+    <button class="menu-item"  (click)="pageTitle('Feedback')" [routerLink]="['/admin/feedback']"  mat-flat-button>
+      <mat-icon routerLinkActive="active" >sms</mat-icon>
+      <span  *ngIf="isMenuOpen" style="padding-left: 10px; padding-right: 15px;" matBadge="7"   matBadgePosition= 'above after'  matBadgeColor="warn" MatBadgeSize = 'small'>Feedback</span>
+      </button>
+  </mat-list-item>
+  <mat-list-item >
+    <button class="menu-item"  (click)="pageTitle('Claim')" [routerLink]="['/admin/claim']"  mat-flat-button>
+      <mat-icon routerLinkActive="active" >sentiment_dissatisfied</mat-icon>
+      <span *ngIf="isMenuOpen" style="padding-left: 10px;">Claim</span>
+      </button>
+  </mat-list-item>
+  <mat-list-item >
+  <div id="textt" class="h5" *ngIf="isMenuOpen">Account</div>
+ </mat-list-item>
+
+ <mat-list-item >
+  <button class="menu-item"  (click)="pageTitle('Settings')" [routerLink]="['/admin/settings']"  mat-flat-button>
+    <mat-icon routerLinkActive="active" >settings </mat-icon>
+    <span *ngIf="isMenuOpen" style="padding-left: 10px;">Settings</span>
+    </button>
+</mat-list-item>
+
+<mat-list-item >
+  <button class="menu-item"  (click)="pageTitle('Claim')" [routerLink]="['/admin/addinformations']"  mat-flat-button>
+    <mat-icon routerLinkActive="active" >date_range</mat-icon>
+    <span *ngIf="isMenuOpen" style="padding-left: 10px;">Add Post/Offer</span>
+    </button>
+</mat-list-item>
+
+<mat-list-item >
+  <button class="menu-item"  (click)="pageTitle('Claim')" [routerLink]="['/home']"  mat-flat-button>
+    <i class="material-icons" style="  margin-left: 28px;  width: 30px;"  routerLinkActive="active" >logout</i>
+    <span *ngIf="isMenuOpen" style="padding-left: 10px;">Logout</span>
+    </button>
+
+</mat-list-item>
+
+
+  <mat-card class="cardavatar" >
+    <mat-card-header>
+      <div mat-card-avatar class="avatar" mat-icon-button [matMenuTriggerFor]="menu" >
+      </div>
+
+      <mat-card-title class="cardtitle" *ngIf="isMenuOpen">John Doe</mat-card-title>
+      <mat-card-subtitle class="cardmail" *ngIf="isMenuOpen">slamaomar@gmail.com</mat-card-subtitle>
+
+
+      <mat-icon class="moreico"  *ngIf="isMenuOpen"  mat-icon-button [matMenuTriggerFor]="menu" >more_horiz</mat-icon>
+    <mat-menu class="menuu" #menu="matMenu" yPosition="above" xPosition="after">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+
+  </mat-card-header>
+  </mat-card>
+
+</mat-list>
+
+</mat-sidenav>
+
+<div id="sidenavContainer"  [ngStyle]="{ 'margin-left.px': contentMargin }" fullscreen >
+
+          <app-adminnavbar>
+          </app-adminnavbar>
+         <div id="dashpage">
+         <router-outlet></router-outlet>
+         </div>
+</div>
